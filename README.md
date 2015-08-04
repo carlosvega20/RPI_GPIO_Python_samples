@@ -11,5 +11,8 @@ https://gist.github.com/carlosvega20/2a4282d80cd82a9360ca
 Raspberry PI i2c Hello world!. 
 Blink a simple led.
 
+Board Setup:
+![board setup](/assets/rp_led_setup.jpg)
+
 
 
