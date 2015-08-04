@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # Basic blink Led code for Raspberry Pi
 # Written in Python 2.7.3 by Carlos Vega
 
