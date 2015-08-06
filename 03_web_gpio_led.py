@@ -8,7 +8,6 @@ import time                 ## Import 'time' library (for 'sleep')
 
 app = Flask(__name__)
 
-## Define function named ledBlink()
 def ledBlink(pin, delay):
     while True:
         GPIO.output(pin, GPIO.HIGH)     ## Turn on GPIO pin (HIGH)
@@ -17,7 +16,7 @@ def ledBlink(pin, delay):
         time.sleep(delay)               ## Wait
 
 
-@app.route("/") # take note of this decorator syntax, it's a common pattern
+@app.route("/")
 def hello():
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(7, GPIO.OUT)
@@ -26,4 +25,4 @@ def hello():
     return "Hello World!"
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8080) #Running on http://localhost:8080
